@@ -103,13 +103,14 @@ button:hover {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    height: 150px;  /* 정사각형으로 변경 */
+    width: 150px;   /* 정사각형의 가로 길이 */
+    height: 150px;  /* 정사각형의 세로 길이 */
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* 가운데 정렬 */
 }
 
 .card:hover {
@@ -120,7 +121,7 @@ button:hover {
 .card h3 a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;  /* 폰트 크기를 작게 조정 */
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -154,9 +155,8 @@ footer p {
     }
 
     .card {
-        width: 100%;
-        max-width: 250px;
-        height: 250px;  /* 정사각형 유지 */
+        width: 200px;  /* 정사각형의 가로 길이 */
+        height: 200px; /* 정사각형의 세로 길이 */
     }
 }
 
@@ -170,13 +170,12 @@ footer p {
     }
 
     .card {
-        width: 100%;
-        max-width: 200px;
-        height: 200px;  /* 작은 화면에서도 정사각형 유지 */
+        width: 150px;  /* 정사각형의 가로 길이 */
+        height: 150px; /* 정사각형의 세로 길이 */
         padding: 10px;
     }
 
     .card h3 a {
-        font-size: 14px;  /* 작은 화면에 맞게 텍스트 크기 조정 */
+        font-size: 14px;
     }
 }
