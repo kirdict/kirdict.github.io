@@ -25,13 +25,20 @@
 
     <!-- 메인 섹션 -->
     <main>
-        <section class="search-section">
-            <h2>Explore Kirdict</h2>
-            <div class="search-container">
-                <input type="text" placeholder="검색어를 입력하세요..." class="search-bar">
-                <button>검색</button>
-            </div>
-        </section>
+        <!-- 검색 섹션 (변경 없음) -->
+<section class="search-section">
+    <h2>Find Your Topics</h2>
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-bar" placeholder="Search...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+</section>
+
+<!-- 검색 결과 섹션 추가 -->
+<section id="search-results" class="search-results">
+    <h2>Search Results</h2>
+    <div id="results-container"></div>
+</section>
 
         <section class="categories">
             <h2>주제별 탐색</h2>
