@@ -103,8 +103,8 @@ button:hover {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 150px;   /* 정사각형의 가로 길이 */
-    height: 150px;  /* 정사각형의 세로 길이 */
+    width: 200px;   /* 정사각형의 가로 길이 */
+    height: 50px;  /* 정사각형의 세로 길이 */
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
