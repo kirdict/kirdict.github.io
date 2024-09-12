@@ -70,38 +70,6 @@ main {
     margin-right: 10px;
 }
 
-/* 검색 결과 스타일 */
-.search-results {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.search-results h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#results-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* 항목 간 간격 */
-}
-
-.result-item {
-    font-size: 18px;
-}
-
-.result-item a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.result-item a:hover {
-    text-decoration: underline;
-}
-
 button {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -125,35 +93,30 @@ button:hover {
 .category-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .card {
-    background-color: #f5f5f5;
-    padding: 10px;
-    border-radius: 0;  /* 테두리 둥글게 하지 않음 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 200px;   /* 직사각형의 가로 길이 */
-    height: 100px;  /* 직사각형의 세로 길이 */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* 가운데 정렬 */
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -187,8 +150,8 @@ footer p {
     }
 
     .card {
-        width: 150px;  /* 직사각형의 가로 길이 */
-        height: 75px;  /* 직사각형의 세로 길이 */
+        width: 100%;
+        max-width: 300px;
     }
 }
 
@@ -201,13 +164,7 @@ footer p {
         padding: 8px 16px;
     }
 
-    .card {
-        width: 120px;  /* 직사각형의 가로 길이 */
-        height: 60px;  /* 직사각형의 세로 길이 */
-        padding: 10px;
-    }
-
     .card h3 a {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
