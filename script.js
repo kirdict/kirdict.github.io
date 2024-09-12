@@ -20,16 +20,15 @@
             category.name.toLowerCase().includes(query)
         );
 
-        // 검색 결과 표시 (최대 15개)
-        filteredCategories.slice(0, 15).forEach(category => {
-            const resultItem = document.createElement('div');
-            resultItem.className = 'result-item';
-            resultItem.innerHTML = `<a href="${category.link}">${category.name}</a>`;
-            resultsContainer.appendChild(resultItem);
-        });
-
-        // 결과가 없을 경우 메시지 표시
-        if (filteredCategories.length === 0) {
+        // 검색 결과 표시
+        if (filteredCategories.length > 0) {
+            filteredCategories.forEach(category => {
+                const resultCard = document.createElement('div');
+                resultCard.className = 'card';
+                resultCard.innerHTML = `<h3><a href="${category.link}">${category.name}</a></h3>`;
+                resultsContainer.appendChild(resultCard);
+            });
+        } else {
             resultsContainer.innerHTML = '<p>No results found.</p>';
         }
     }
